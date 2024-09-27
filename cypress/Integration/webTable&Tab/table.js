@@ -2,7 +2,7 @@
 /// <reference types='cypress-xpath'/>
 
 describe('"Headling mutiple Tabs,Multiple WIndows,webtable', () => {
-    it.skip('test1', () => {
+    it('test1', () => {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
         
         
@@ -58,19 +58,19 @@ describe('"Headling mutiple Tabs,Multiple WIndows,webtable', () => {
 
         
     });
-    // it.skip('for google to next', () => {
-    //     cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
+    it('for google to next', () => {
+        cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
 
-    //     cy.xpath('//table[@class="gf-t"]/tbody/tr/td[4]/ul/li').each(($ele)=>{
+        cy.xpath('//table[@class="gf-t"]/tbody/tr/td[4]/ul/li').each(($ele)=>{
 
-    //         if($ele.text().includes('Social Media')){
-    //             cy.wrap($ele).next().then((char)=>{
-    //                 cy.log(char.text())
-    //             })
-    //         }
-    //     })
+            if($ele.text().includes('Social Media')){
+                cy.wrap($ele).next().then((char)=>{
+                    cy.log(char.text())
+                })
+            }
+        })
         
-    // });
+    });
 
 
 });
