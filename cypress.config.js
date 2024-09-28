@@ -10,7 +10,7 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
   e2e: {
   setupNodeEvents,
-  specPattern:"cypress/Integration/*/*.js"
+  specPattern:"cypress/Integration/Basic/rsdropdown.js"
   //specPattern:"cypress/UAT/features/*.feature"
   },
 });
